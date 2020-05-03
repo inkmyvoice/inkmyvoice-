@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset= "utf-8">
+<meta name= "viewport" content="width=device-width, initial-scale=1"/>
+<title>Home.</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src ="jquery.js"></script>
+</head>
+<body>
+
+<input type ="checkbox" id ="section">
+<label for="section" onclick></label>
+
+<nav class ="sidebar">
+<a href ="index.html" class ="active">Home</a>
+<a href ="about.html">About'</a>
+<a href ="Work.html">Work'</a>
+<a href ="https://tinyletter.com/inkmyvoice">Subscribe'</a>
+</nav>
+
+
+
+<div class="inkmyvoice">
+<h1><em>InkMyVoice</em></h1>
+<em>Author- Poet - Web Dev</em></div>
+
+  <header class ="booklink">
+  <a href = "https://www.amazon.ca/You-I-Nasra-Farah/dp/1097365387/
+  ref=sr_1_1?crid=RG0269NRRNKZ&keywords=nasra+
+  farah&qid=1580146266&sprefix=Nasra+Farah%2Caps%2C164&sr=8-1" 
+  target="_blank">
+  <div class ="tooltip">
+  You and I is now avaiable on amazon.<span class ="tooltiptext">click to purchase</span></header></a>
+  <div class ="row">
+  <img src="images/youandi.jpg" alt="Book" width="330" height ="420" class ="book">
+  <img src ="images/youandi2.jpg" alt ="book"width="330" height ="420" class ="book2">
+  <img src ="images/backofbook.jpg" alt ="book"width="330" height ="420" class ="book3">
+  </div>
+</div>
+
+
+
+<div class ="container1">
+
+<div class ="zoom">
+<button onclick="showMore()" class="secondtitle"><span>the places poetry took me</span></button></div>
+<div id ="showmore">
+<div class = "gallery1">
+  <div class ="places">
+ <img src ="images/pray.png" alt="backofbook" height ="530" width ="400">
+  <div class ="content">
+  <div class ="text">
+  <p>'I know forgiveness heals. I know it will cover the way fear broke us.'<br>-sharja</p></div>
+  </div>
+  </div>
+
+  <div class ="places">
+  <img src ="images/meandart.jpeg" alt="image1" height ="500" width ="370">
+  <div class ="content">
+  <div class ="text">
+  <p>'The days laughter builds in my chest, I remember you.'
+    </p></div>
+    </div>
+    </div>
+
+  <div class ="places">
+  <img src ="images/top.jpg" alt="image2" height ="530" width ="400">
+  <div class ="content">
+  <div class ="text">
+  <p>'I am learning how to touch life outside of my prayers.'
+    <br>
+    -dubai</p></div>
+    </div>
+    </div>
+
+  <div class ="places">
+  <img src ="images/flowersjust.jpg" alt="image3" height ="530" width ="400">
+  <div class ="content">
+  <div class ="text">
+  <p>'I worry that I may love something that never belonged to me.'
+    <br>
+     -ottawa</p></div>
+   </div>
+   </div>
+
+  <div class ="places">
+  <img src ="images/lookdown.jpg" alt="image4" height ="430" width ="380">
+  <div class ="content">
+  <div class ="text">
+    <p>'I remembered how whole I was before you.'
+    </p></div>
+   </div>
+   </div>
+
+    <div class ="places">
+  <img src ="images/vintage.jpeg" alt="image5" height ="530" width ="400">
+  <div class ="content">
+  <div class ="text">
+    <p>'Our prayers are stuck beneath the heavens.'
+      <br>
+        -oman</p></div>
+   </div>
+   </div>
+ 
+  
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<a href ="https://www.instagram.com/inkmyvoice/?hl=en" target ="_blank">
+<img src ="images/Instagram_2.png" class ="socialicon">
+</a>
+
+
+</body>
+</html>
+
+<style>
+  
+ 
+ @media only screen and (max-width:780px){
+
+ .sidebar a{
+  top: 0;
+  width: 25%;
+  font-size: 20px;
+  opacity: 0.8;
+            
+ }
+ body{
+position: absolute;
+ }
+ .inkmyvoice{
+  font-size: large;
+  width: 600px;
+ }
+ .maintitle{
+ font-size: large;
+ }
+ .secondtitle{
+   font-size: 60px;
+ }
+ .row{
+ height: auto;
+ width: 640px;
+ margin: 0 auto;
+ }
+
+.booklink{
+ height: auto;
+ width: 600px;
+ }
+ header{
+  width:200px;
+  align-items: center;
+  
+ }
+
+}
+
+*{
+margin: 0;
+padding: 0 auto;
+box-sizing: inherit;
+}
+
+  html{
+  box-sizing: border-box;
+  font-size: 95%;
+  }
+
+  body{
+  font-family: "Times New Roman", cursive;
+	color: #333;
+	font-weight: 350;
+	overflow-x: hidden;
+  }
+
+.row{
+display: grid;
+opacity: 0.8;
+}
+.row:hover{
+opacity: 1;
+}
+.secondtitle{
+font-family: "Times New Roman";
+font-size: 20px;
+font-style:italic;
+grid-column: 1 /span 3;
+background-color: #FAF5F2;
+border:none;
+outline: none;
+cursor: pointer;
+}
+.secondtitle:hover{
+opacity: 0.7;
+background-color:#F7F6F1 ;
+}
+.secondtitle:hover span{
+display: none;
+}
+.secondtitle:hover:before{
+content: "click to reflect";
+
+}
+#showmore{
+display: none;
+transition:1s ease-out;
+}
+.zoom{
+transition: transform .6s;
+}
+.zoom:hover{
+ -ms-transform: scale(1.5);
+ -webkit-transform: scale(1.5);
+ transform: scale(1.5); 
+}
+.book2{
+border-style: solid;
+border-color: #EAD7BB;
+grid-column: 4 /span 4;
+grid-row: 1 / span 4;
+}
+
+.book{
+border-style: solid;
+border-width: thin;
+border-color: #E5F1D0;
+grid-column: 6  /span 4;
+grid-row: 2 /span 4;
+}
+
+.book3{
+border-style: solid;
+border-width: thin;
+border-color: #E5F1D0;
+grid-column:  3 /span 3;
+grid-row: 2 /span 6;
+}
+
+#wrapper{
+display: block;
+width: 100%;
+}
+.socialicon{
+padding: 20px;
+height: 70px;
+}
+
+.maintitle span {
+font-family: "Times New Roman", cursive;
+font-size: 25px;
+font-style: oblique;
+transform: lowercase;
+}
+
+.maintitle:hover{
+opacity: 0.7;
+}
+
+h1{
+font-family: "Times New Roman", cursive ;
+font-size: 3rem;
+color: black;
+}
+  h2{
+  border-style: solid;
+  border-width: thick;
+  border-color: #FFF9F0;
+  position: fixed;
+  background-color:#FAF9F5; 
+  font-size: 23px;
+  color: black;
+  font-family: "Times New Roman";
+  font-weight: lighter;
+
+  }
+.booklink{
+font-size: 20px;
+color: black;
+font-family: "Times New Roman";
+font-weight: lighter;
+font-style: italic;
+
+}
+
+.booklink a{ 
+color: black;
+}
+
+   h3{
+font-family: "Times New Roman";
+font-size: 25px;
+font-weight: lighter;
+color: black;
+font-style: italic;
+opacity: 0.8;
+text-align: center;
+ }
+
+ h3:hover{
+opacity: 0.7;
+}
+.container1{
+width: 60%;
+margin: 2rem auto;
+  
+  }
+
+
+.gallery1{
+border-style:solid;
+border-width: thin; 
+border-color: white;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+  
+
+.gallery1 img{
+border-style: solid;  
+border-color: white;
+  
+}
+
+.places{
+position: relative;
+padding: 0;
+width: 100%;
+object-fit: cover;
+max-height: 100%;
+cursor: pointer;
+overflow: hidden;
+}
+
+.places p{
+font-size: 18px;
+}
+
+.content{
+position: absolute; 
+opacity:0;
+top:0;
+left:0;
+bottom: 0;
+right: 0;
+color:#1c87c9;
+background-color: rgb(245, 244, 242, 0.5);
+width:100%;
+height:100%;
+transition: .5s ease;
+}
+
+.text{
+color: black;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.places:hover .content{
+opacity: 1;
+}
+
+.social{
+display: grid;
+grid-template-columns: auto;
+opacity: 0.8;
+}
+
+.me{
+grid-row:1; 
+}
+.sign{
+grid-row: 1;
+
+}
+
+.tooltip span{
+font-style:italic;  
+font-size: 15px;
+}
+.tooltip{
+position: relative; 
+display:  inline-block;
+}
+
+.tooltip .tooltiptext{
+visibility: hidden;
+width: 200px;
+background-color:#FAF9F5; 
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+top: 105%;
+left: 10%;
+margin-left: -60px;
+opacity: 0;
+transition: opacity 0.3s;
+
+}
+
+.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+
+}
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity:  1;
+
+}
+
+</style>
+
